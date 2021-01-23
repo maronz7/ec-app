@@ -1,12 +1,10 @@
 const initialState = {
+  users: {
+    isSignedIn: false,
+    role: "",
+    uid: "",
+    username: "",
+  },
+};
 
-    users: {
-        icon: "",
-        isSignedIn: false,
-        uid: "",
-        username:""
-        
-    }
-}
-
-export default initialState
+export default initialState;

@@ -1,17 +1,15 @@
-import React from 'react'
-import {Switch, Route} from 'react-router'
-// import {BrowserRouter} from 'react-router-dom'
-import {Login, Home} from './templates'
+import React from "react";
+import { Switch, Route } from "react-router";
+import { Home, SignUp, SignIn } from "./templates";
 
 const Router = () => {
-    return(
-        // <BrowserRouter>
-        <Switch>
-            <Route exact path={"/login"} component={Login}/>
-            <Route exact path={"(/)?"} component={Home}/>
-        </Switch>
-        // </BrowserRouter>
-    )
-}
+  return (
+    <Switch>
+      <Route exact path={"(/)?"} component={Home} />
+      <Route exact path={"/signup"} component={SignUp} />
+      <Route exact path={"/signin"} component={SignIn} />
+    </Switch>
+  );
+};
 
-export default Router
+export default Router;
